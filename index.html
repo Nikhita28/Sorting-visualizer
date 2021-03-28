@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sorting.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="sort-descending.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <title>Sorting Visualizer</title>
+</head>
+<body>
+   <h1 class="heading">Sorting Visualizer</h1> 
+   <button class="new-array" onclick="generatebars(arr)">New Array</button>
+   <div class="col" id="input">
+    <span id="size">Size
+        <input id="arr_sz" type="range" min="5" max="100" step=1 value=60>
+    </span>
+    <span id="speed">Speed
+        <input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60>
+    </span>
+   </div>
+         
+   <div class="Sort-buttons">
+   <button class="bubble" onclick="bubbleSort()">Bubble Sort</button>
+   <button class="Selection" onclick="selectionSort()">Selection Sort</button>
+   <button class="Insertion" onclick="insertionSort()">Insertion Sort</button>
+   <button class="Quick" onclick="quickSort()">Quick Sort</button>
+   </div>
+   <div id="bar-components" class="flex-container"> </div>
+   <script src="js/sorting.js"></script>
+</body>
+</html>
